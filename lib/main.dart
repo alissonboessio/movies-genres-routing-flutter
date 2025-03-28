@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_roteamento/rotas.dart';
-import 'package:flutter_application_roteamento/screens/genre_screen.dart';
-import 'package:flutter_application_roteamento/screens/genres_screen.dart';
-import 'package:flutter_application_roteamento/screens/movie_screen.dart';
-import 'package:flutter_application_roteamento/screens/movies_screen.dart';
+import 'package:flutter_application_roteamento/screens/genre/genre_screen.dart';
+import 'package:flutter_application_roteamento/screens/genre/genres_screen.dart';
+import 'package:flutter_application_roteamento/screens/movie/movie_screen.dart';
+import 'package:flutter_application_roteamento/screens/movie/movies_screen.dart';
 import 'package:flutter_application_roteamento/services/genre_service.dart';
 import 'package:flutter_application_roteamento/services/movie_service.dart';
 import 'package:provider/provider.dart';
