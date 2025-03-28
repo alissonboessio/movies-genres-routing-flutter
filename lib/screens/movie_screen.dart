@@ -23,6 +23,7 @@ class _MovieScreenState extends State<MovieScreen> {
   @override
   void initState() {
     super.initState();
+    // utilizado para iniciar o estado da tela caso seja uma edição
     WidgetsBinding.instance.addPostFrameCallback((_) {
       final service = Provider.of<MovieService>(context, listen: false);
       final serviceGenre = Provider.of<GenreService>(context, listen: false);
@@ -102,13 +103,6 @@ class _MovieScreenState extends State<MovieScreen> {
                   if (_formKey.currentState!.validate()) {
                     final title = _titleController.text;
                     final director = _directorController.text;
-
-                    if (selectedGenre == null) {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(content: Text("Selecione um gênero")),
-                      );
-                      return;
-                    }
 
                     final updMovie = Movie(
                       id: movie?.id ?? 0, 
